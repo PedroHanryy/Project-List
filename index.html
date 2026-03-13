@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras da Semana</title>
+</head>
+<body>
+    <header class="nav-bar">
+        <div class="logo">
+            quicklist
+        </div>
+    </header>
+
+    <main class="container">
+
+        <nav>
+            <button class="back-button">Voltar</button>
+        </nav>
+
+        <h1>
+            Compras da Semana
+        </h1>
+
+        <form id="add-form" class="input-group">
+            <input type="text" id="item-input" placeholder="Adicione um novo item">
+            <button type="submit" id="add-button">Adicionar</button>
+        </form>
+
+        <ul id="shopping-list">
+            <li class="item-card">
+                <div class="item-info">
+                    <input type="checkbox" class="checkbox-custom">
+                    <span class="text-item">Pão de forma</span>
+                </div>
+                <button class="btn-remove"><span class="far fa-trash-alt"></span></button>
+            </li>
+
+            <li class="item-card">
+                <div class="item-info">
+                    <input type="checkbox" class="checkbox-custom">
+                    <span class="text-item">Café preto</span>
+                </div>
+                <button class="btn-remove"><i class="far fa-trash-alt"></i></button>
+            </li>
+
+            <li class="item-card">
+                <div class="item-info">
+                    <input type="checkbox" class="checkbox-custom">
+                    <span class="text-item">Suco de laranja</span>
+                </div>
+                <button class="btn-remove"><i class="far fa-trash-alt"></i></button>
+            </li>
+
+            <li class="item-card">
+                <div class="item-info">
+                    <input type="checkbox" class="checkbox-custom">
+                    <span class="text-item">Bolacha</span>
+                </div>
+                <button class="btn-remove"><i class="far fa-trash-alt"></i></button>
+            </li>
+        </ul>
+
+        <div id="alert-footer" class="alert-box hidden">
+            <div class="alert-content">
+                <span class="fa-solid fa-circle-exclamation"></span>
+                <span>O item foi removido da lista</span>
+            </div>
+            <button id="close-alert"><span class="fa-solid fa-xmark"></span></button>
+        </div>
+
+    </main>
+</body>
+</html>
