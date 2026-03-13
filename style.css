@@ -45,7 +45,7 @@ body {
     padding: 0 20px;
 }
 
-.back-button {
+.btn-back {
     background: none;
     border: none;
     color: var(--pink-primary);
@@ -78,7 +78,7 @@ h1 {
     border-color: var(--pink-primary);
 }
 
-#add-button {
+#add-btn {
     background: var(--pink-primary);
     color: var(--white);
     border: none;
@@ -132,4 +132,33 @@ h1 {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
+    background: var(--alert-bg);
+    color: var(--white);
+    padding: 15px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 150px;
+    z-index: 1000;
+}
+
+.alert-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+#close-alert {
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 18px;
+    cursor: pointer;
+    font-size: 18px;
 }
