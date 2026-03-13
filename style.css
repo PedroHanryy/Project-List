@@ -1,0 +1,135 @@
+:root {
+    --pink-primary: #d1427a;
+    --bg-gray: #f9f9f9;
+    --text-dark: #333;
+    --white: #ffffff;
+    --alert-bg: #c0392b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: var(--bg-gray);
+    color: var(--text-dark);
+}
+
+.nav-bar {
+    background: var(--white);
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2 10 rgba(0, 0, 0, 0.95);
+}
+
+.logo {
+    color: var(--pink-primary);
+    font-weight: 800;
+    font-size: 1.5rem;
+    height: 25px;
+}
+
+.main-header {
+    background: var(--white);
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.back-button {
+    background: none;
+    border: none;
+    color: var(--pink-primary);
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+#item-name {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1.5px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+#item-name:focus {
+    border-color: var(--pink-primary);
+}
+
+#add-button {
+    background: var(--pink-primary);
+    color: var(--white);
+    border: none;
+    padding: 0 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.item-card {
+    background: var(--white);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.item-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.checkbox-custom {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.text-item.completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.btn-remove {
+    background: none;
+    border: none;
+    color: #ccc;
+}
+
+.btn-remove:hover {
+    color: #e74c3c;
+}
+
+.alert-box {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
